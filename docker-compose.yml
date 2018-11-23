@@ -1,0 +1,44 @@
+version: '3'
+services:
+  master-1:
+    image: "poc-i2-6542"
+    environment:
+      - "NodeName=master-1"
+    ports:
+      - "56651:5665"
+      - "8001:80"
+  master-2:
+    image: "poc-i2-6542"
+    environment:
+      - "NodeName=master-2"
+    ports:
+      - "56652:5665"
+      - "8002:80"
+  sat-a-1:
+    image: "poc-i2-6542"
+    environment:
+      - "NodeName=sat-a-1"
+    ports:
+      - "56653:5665"
+      - "8003:80"
+  sat-a-2:
+    image: "poc-i2-6542"
+    environment:
+      - "NodeName=sat-a-2"
+    ports:
+      - "56654:5665"
+      - "8004:80"
+  sat-b-1:
+    image: "poc-i2-6542"
+    environment:
+      - "NodeName=sat-b-1"
+    ports:
+      - "56655:5665"
+      - "8005:80"
+  sat-b-2:
+    image: "poc-i2-6542"
+    environment:
+      - "NodeName=sat-b-2"
+    ports:
+      - "56656:5665"
+      - "8006:80"
