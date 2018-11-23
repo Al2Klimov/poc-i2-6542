@@ -1,0 +1,2 @@
+deb http://packages.icinga.com/debian icinga-stretch main
+deb-src http://packages.icinga.com/debian icinga-stretch main
